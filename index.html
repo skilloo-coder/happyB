@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>HTML</title>
-  
+
   <!-- HTML -->
-  
+
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
@@ -16,27 +17,56 @@
 
 <body>
   <h1>Download ZIP File</h1>
-<button onclick="downloadZip()">Download ZIP File</button>
+  <button onclick="downloadZip()">Download ZIP File</button>
 
-<script>
-  function downloadZip() {
-    const link = document.createElement('a');
-    link.href = '/happyB.zip';
-    link.download = 'happyB.zip';
-    link.click();
-  }
-</script>
+  <script>
+    function downloadZip() {
+      const link = document.createElement('a');
+      link.href = '/happyB.zip';
+      link.download = 'happyB.zip';
+      link.click();
+    }
+  </script>
 
-<h2>php files download</h2>
-<div>
-<a href="index.php">index</a>
-<a href="config.php">config</a>
-<a href="welcome.php">welcome</a>
-<a href="logout.php">logout</a>
-<a href="register.php">register</a>
-</div>
+  <h2>php files download</h2>
+  <div>
+    <a href="index.php" download>index</a>
+    <a href="config.php" download>config</a>
+    <a href="welcome.php" download>welcome</a>
+    <a href="logout.php" download>logout</a>
+    <a href="register.php" download>register</a>
+
+  </div>
+
+  <h2>jsp files download</h2>
+  <div>
+    <a href="jsp/index.jsp" download>index</a>
+    <a href="jsp/config.jsp" download>config</a>
+    <a href="jsp/welcome.jsp" download>welcome</a>
+    <a href="jsp/logout.jsp" download>logout</a>
+    <a href="jsp/register.jsp" download>register</a>
+    <a href="jsp/login.jsp" download>login</a>
+    <a href="jsp/README.txt" download>jsp-README</a>
+  </div>
+
+  <h2> java servlet files download</h2>
+  <div>
+    <a href="/servlet /Index.jsp" download>index.jsp</a>
+    <a href="/servlet /Config.java" download>config.java</a>
+    <a href="/servlet /welcome.jsp" download>welcome.jsp</a>
+    <a href="/servlet /logoutServlet.java" download>logoutservlet.java</a>
+    <a href="/servlet /register.jsp" download>register.jsp</a>
+    <a href="/servlet /login.jsp" download>login
+      jsp</a>
+    <a href="/servlet /README.txt" download>servlet-README</a>
+    <a href="/servlet /indexservlet.java" download>indexservlet.java</a>
+    <a href="/servlet /loginServlet.java" download>loginServlet.java</a>
+    <a href="/servlet /register.java" download>register.java</a>
+    <a href="/servlet /web.xml" download>web.xml</a>
+  </div>
 
   <!-- Project -->
   <script src="main.js"></script>
 </body>
+
 </html>
