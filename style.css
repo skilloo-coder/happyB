@@ -8,5 +8,11 @@
   display: inline-block;
 }
 .part div{
-  display: ;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.part div a{
+  padding: 20px;
 }
