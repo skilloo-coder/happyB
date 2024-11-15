@@ -14,6 +14,7 @@
 }
 
 .part div a{
-  padding: 5rem;
-  background: red;
+  padding: 1rem;
+  background: transparent;
+  margin: 1rem;
 }
