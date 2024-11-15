@@ -1,0 +1,19 @@
+Php dbms
+CREATE DATABASE IF NOT EXISTS student_db;
+
+USE student_db;
+
+-- Table to store user authentication data
+CREATE TABLE IF NOT EXISTS userdata (
+    roll_number VARCHAR(20) PRIMARY KEY,
+    user_id VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+-- Table to store additional student details
+CREATE TABLE IF NOT EXISTS stddetails (
+    roll_number VARCHAR(20) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    branch VARCHAR(50) NOT NULL,
+    FOREIGN KEY (roll_number) REFERENCES userdata(roll_number) ON DELETE CASCADE
+);
