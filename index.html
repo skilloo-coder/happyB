@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Download ZIP File</h1>
+<button onclick="downloadZip()">Download ZIP File</button>
+
+<script>
+  function downloadZip() {
+    const link = document.createElement('a');
+    link.href = '/240101089AyushGupta.zip';
+    link.download = '240101089AyushGupta.zip';
+    link.click();
+  }
+</script>
+
+<h2>php files download</h2>
+<div>
+<a href="index.php">index</a>
+<a href="config.php">config</a>
+<a href="welcome.php">welcome</a>
+<a href="logout.php">logout</a>
+<a href="register.php">register</a>
+</div>
+
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
